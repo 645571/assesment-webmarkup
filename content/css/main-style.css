@@ -1,4 +1,88 @@
+/* body settings */
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15pt;
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+/* navbar settings */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 100px 10px 100px;
+  overflow: hidden;
+  background-color: #444444;
+}
+#hamburger-click-id{
+  display: none;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+/* navbar small screen settings */
+.hamburger{
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+  display: none;
+}
+.hamburger{
+  height: 2em;
+}
+@media only screen and (max-width: 852px) {
+  body{
+    margin-top: 145px;
+  }
+}
+@media only screen and (max-width: 553px) {
+  body{
+    margin-top: 190px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #hamburger-click-id:checked + ul li {
+  display: block;
+  }
+  .hamburger{
+    display: block;
+  }
+  .menu-item {
+    display: none;
+    width: 100%;
+  }
+  body{
+    margin-top: 350px;
+  }
+}
+/* content settings */
+section{
+  margin: 0px 100px 0px 100px;
+}
+section:nth-child(even) {
+  background-color: #FFFFFF;
+}
+section:nth-child(odd) {
+  background-color: #2699FB;
+  color: #FFFFFF;
 }
