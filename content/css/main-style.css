@@ -9,9 +9,27 @@ body{
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 65px 10px 65px;
   overflow: hidden;
   background-color: #444444;
+  border-radius: 20px;
+}
+video{
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+img{
+  max-width: 200px;
+  margin-right: 15px;
+  border-radius: 10px;
+
+}
+.image-haarlem{
+  max-width: 400px;
 }
 #hamburger-click-id{
   display: none;
@@ -19,9 +37,9 @@ nav ul {
 nav{
   position: fixed;
   top: 0;
-  left: 0;
+  left: 1%;
   right: 0;
-  width: 100%;
+  width: 98%;
 }
 nav ul li {
   float: left;
@@ -78,11 +96,12 @@ nav ul li a:hover {
 /* content settings */
 section{
   margin: 0px 100px 0px 100px;
+  border-radius: 15px;
 }
 section:nth-child(even) {
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255, 0.8);
 }
 section:nth-child(odd) {
-  background-color: #2699FB;
+  background-color: rgb(38, 153, 251, 0.8);
   color: #FFFFFF;
 }
