@@ -1,10 +1,19 @@
-/* body settings */
+
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 15pt;
   margin: 100px 0 0 0;
   padding: 0;
   color: #000000;
+}
+h1{
+  font-size: 30pt;
+}
+h2{
+  font-size: 25pt;
+}
+h3{
+  font-size: 20pt;
 }
 /* navbar settings */
 nav ul {
