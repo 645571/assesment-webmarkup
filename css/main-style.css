@@ -9,6 +9,7 @@ body{
 nav ul {
   list-style-type: none;
   margin: 0;
+  z-index: 1;
   padding: 10px 65px 10px 65px;
   overflow: hidden;
   background-color: #444444;
@@ -68,16 +69,6 @@ nav ul li a:hover {
 .hamburger{
   height: 2em;
 }
-@media only screen and (max-width: 852px) {
-  body{
-    margin-top: 145px;
-  }
-}
-@media only screen and (max-width: 553px) {
-  body{
-    margin-top: 190px;
-  }
-}
 @media only screen and (max-width: 480px) {
   #hamburger-click-id:checked + ul li {
   display: block;
@@ -88,9 +79,6 @@ nav ul li a:hover {
   .menu-item {
     display: none;
     width: 100%;
-  }
-  body{
-    margin-top: 350px;
   }
 }
 /* content settings */
@@ -104,4 +92,8 @@ section:nth-child(even) {
 section:nth-child(odd) {
   background-color: rgb(38, 153, 251, 0.8);
   color: #FFFFFF;
+}
+
+.logo{
+  max-width: 80px;
 }
