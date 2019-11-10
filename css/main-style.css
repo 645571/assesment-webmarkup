@@ -4,6 +4,7 @@ body{
   font-size: 15pt;
   margin: 100px 0 0 0;
   padding: 0;
+  color: #000000;
 }
 /* navbar settings */
 nav ul {
@@ -55,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #111;
+  background-color: #707070;
 }
 /* navbar small screen settings */
 .hamburger{
@@ -86,10 +87,10 @@ section{
   margin: 0px 100px 0px 100px;
   border-radius: 15px;
 }
-section:not(.cookie):nth-child(even) {
+section:not(.cookie):nth-child(odd) {
   background-color: rgb(255, 255, 255, 0.8);
 }
-section:not(.cookie):nth-child(odd) {
+section:not(.cookie):nth-child(even) {
   background-color: rgb(38, 153, 251, 0.8);
   color: #FFFFFF;
 }
@@ -121,4 +122,37 @@ ul{
   margin: 0;
   padding: 0;
   z-index: 2;
+}
+button{
+  background-color: #F5F5F5;
+  padding: 10px 5px 10px 5px;
+  border: 0;
+  border-radius: 5px
+}
+@media only screen and (max-width: 990px) {
+  img{
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+  }
+  .image-haarlem{
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section{
+    margin: 0 10px 0 10px;
+  }
+  textarea{
+    width: 300px;
+    height: 200px;
+  }
+}
+.submit-button{
+  background-color: #2699FB;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
 }
