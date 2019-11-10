@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl-nl">
 <head>
+  <!-- meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,9 +13,11 @@
   <title>Haarlem</title>
 </head>
 <body>
+  <!-- background video -->
   <video autoplay muted loop id="myVideo">
     <source src="videos/background-city.mov" type="video/mp4">
   </video>
+  <!-- navbar -->
   <nav>
     <input type="checkbox" name="hamburger-click" id="hamburger-click-id" value="value">
     <ul>
@@ -38,6 +41,7 @@
       </li>
     </ul>
   </nav>
+  <!-- main content -->
   <section id="maincontent">
     <article>
       <header>
@@ -75,6 +79,7 @@
       </footer>
     </article>
   </section>
+  <!-- secondarycontent -->
   <section id="secondarycontent">
     <article class="container">
       <header class="grid-header">
@@ -142,6 +147,7 @@
       </footer>
     </article>
   </section>
+  <!-- sportcontent -->
   <section id="sportcontent">
     <h1>Mudo</h1>
     <article>
@@ -302,14 +308,59 @@
   </section>
   <section id="referalcontent">
     <header>
+      <h1>Hwa-Rang Dragon</h1>
     </header>
+    <p>
+      Hwa-Rang Dragon is een vereniging waar je kan Judoën en mudoën. Hwa-Rang Dragon is verbouwd in juli en augustus 2019.
+    </p>
     <aside>
+      <a target="_blank" href="https://www.taekwon.nl/">Link naar Hwa-Rang Dragon</a>
     </aside>
     <footer>
+      <ul>
+        <li>Wilt u meer informatie en/of heeft u vragen?</li>
+        <li>Stuur een mail naar info@taekwon.nl</li>
+      </ul>
     </footer>
   </section>
+  <!-- contact content -->
   <section id="contactcontent">
-
+    <form action="http://witan.nl/inholland/testform.php">
+      <fieldset>
+        <legend>Stel je vraag:</legend>
+        <ul>
+          <li>
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </li>
+          <li>
+            <label for="message">Bericht</label>
+          </li>
+          <li>
+            <textarea id="subject" name="subject"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Verzenden">
+          </li>
+      </fieldset>
+    </form>
   </section>
+  <!-- cookie statement  -->
+  <input id="cookie-check" type="checkbox">
+  <section class="cookie">
+    <p>
+      Klik hier om de cookie te accepteren
+
+      <button><label for="cookie-check">accepteren</label></button>
+    </p>
+  </section>
+  <!-- footer content -->
+  <footer>
+    &copy;Dani Obdam
+  </footer>
 </body>
 </html>

@@ -86,14 +86,39 @@ section{
   margin: 0px 100px 0px 100px;
   border-radius: 15px;
 }
-section:nth-child(even) {
+section:not(.cookie):nth-child(even) {
   background-color: rgb(255, 255, 255, 0.8);
 }
-section:nth-child(odd) {
+section:not(.cookie):nth-child(odd) {
   background-color: rgb(38, 153, 251, 0.8);
   color: #FFFFFF;
 }
 
 .logo{
   max-width: 80px;
+}
+
+textarea{
+  width: 500px;
+  height: 200px;
+}
+ul{
+  list-style: none;
+}
+/* cookie */
+#cookie-check:checked + .cookie{
+  display: none;
+}
+#cookie-check{
+  display: none;
+}
+.cookie{
+  position: fixed;
+  background-color: #AAAAAA;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
 }
